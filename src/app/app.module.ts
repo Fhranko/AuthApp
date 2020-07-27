@@ -8,6 +8,7 @@ import { ProtegidaComponent } from './components/protegida/protegida.component';
 import { PreciosComponent } from './components/precios/precios.component';
 import { AppRoutingModule } from './app-routing.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
