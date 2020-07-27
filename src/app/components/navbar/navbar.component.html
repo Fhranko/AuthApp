@@ -13,8 +13,14 @@
         <a class="nav-link" [routerLink]="['/precios']" routerLinkActive="router-link-active" >Protegida</a>
       </li>
     </ul>
-    <span class="navbar-text">
-      Navbar text with an inline element
-    </span>
+
+      <button class="btn btn-outline-primary" *ngIf="!auth.loggedIn">
+        Ingresar
+      </button>
+
+      <button class="btn btn-outline-danger" *ngIf="auth.loggedIn">
+        Salir
+      </button>
+
   </div>
 </nav>
